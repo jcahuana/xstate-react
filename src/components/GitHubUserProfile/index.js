@@ -18,16 +18,7 @@ const Card = styled.div`
 function GitHubUserProfile(props) {
   console.log('props', props);
 
-  const {
-    name,
-    login,
-    bio,
-    followers,
-    avatar_url,
-    followers_url,
-    company,
-    created_at,
-  } = props.user;
+  const { name, login, bio, avatar_url, company, created_at } = props.user;
   return (
     <Card>
       <div className="image">
@@ -56,9 +47,12 @@ function GitHubUserProfile(props) {
         </div>
       </div>
       <div className="extra content">
-        <a target="_blank" rel="noopener noreferrer" href={followers_url}>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={`https://github.com/${login}?tab=followers`}
+        >
           <i className="user icon" />
-          {followers}
           Followers
         </a>
       </div>
