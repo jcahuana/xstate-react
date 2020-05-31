@@ -16,7 +16,7 @@ const Card = styled.div`
 `;
 
 function GitHubUserProfile(props) {
-  console.log('props', props);
+  // console.log('props', props);
 
   const { name, login, bio, avatar_url, company, created_at } = props.user;
   return (
