@@ -1,3 +1,6 @@
+# Card demo with React and xState
+![](https://repository-images.githubusercontent.com/268328800/456dbc80-a367-11ea-97ae-655635884daa)
+
 ## Available Scripts
 
 In the project directory, you can run:
